@@ -1,6 +1,6 @@
 # Bootcamp SQL - MySQL for Universitas Siber Indonesia
 
-Selamat datang di bootcamp **SQL - MySQL** untuk mahasiswa Universitas Siber Indonesia!  
+Selamat datang di bootcamp **SQL** untuk mahasiswa Universitas Siber Indonesia!  
 Kursus ini bertujuan untuk memberikan pemahaman yang mendalam mengenai dasar-dasar SQL hingga teknik-teknik tingkat lanjut dalam penggunaan MySQL untuk pengelolaan dan analisis data.
 
 ## Struktur Kursus
