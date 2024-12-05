@@ -20,10 +20,3 @@ Materi untuk tingkat menengah yang mencakup penggabungan data dari berbagai tabe
 Materi tingkat lanjut yang mencakup modifikasi data dan definisi struktur database.
 - **Modifying Data**: Menambah, mengubah, dan menghapus data dalam database.
 - **Defining Data**: Membuat, mengubah, dan menghapus tabel serta mendefinisikan struktur data.
-
-## Cara Mengikuti Kursus
-
-1. **Klon Repository:**
-   Untuk memulai, pertama-tama klon repository ini ke komputer Anda dengan menggunakan Git:
-   ```bash
-   git clone https://github.com/[username]/bootcamp-sql-mysql.git
