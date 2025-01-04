@@ -3,7 +3,7 @@
 ## **Ringkasan Proyek**
 Bayangkan sebuah perusahaan telekomunikasi yang selama bertahun-tahun telah melayani ribuan pelanggan dengan layanan telepon dan internet. Setiap hari, pelanggan-pelanggan baru datang, namun sebagian lainnya pergi tanpa memberikan alasan yang jelas. Bagi perusahaan ini, setiap pelanggan yang pergi adalah sebuah kehilangan besar—baik dari segi pendapatan maupun potensi untuk tumbuh di masa depan.
 
-Melalui proyek ini, saya akan menyelidiki alasan di balik perilaku pelanggan yang memilih untuk berhenti berlangganan (churn). Tak hanya itu, saya juga akan mencoba memahami pola-pola yang tersembunyi dalam data, mengelompokkan pelanggan ke dalam segmen-segmen tertentu untuk membantu perusahaan lebih memahami kebutuhan mereka. Pada akhirnya, tujuan proyek ini adalah memberikan wawasan yang dapat mendorong perusahaan ini untuk meningkatkan kepuasan pelanggan dan menjaga loyalitas mereka.
+Melalui proyek ini, saya menyelidiki alasan di balik perilaku pelanggan yang memilih untuk berhenti berlangganan (churn). Dengan menganalisis data pelanggan secara mendalam, tujuan proyek ini adalah untuk membangun model prediksi churn yang akurat dan mengidentifikasi faktor-faktor utama yang mempengaruhi keputusan pelanggan untuk berhenti berlangganan. Hasil dari proyek ini diharapkan dapat memberikan wawasan yang dapat mendorong perusahaan untuk meningkatkan kepuasan pelanggan dan menjaga loyalitas mereka.
 
 ---
 
