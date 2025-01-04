@@ -10,58 +10,81 @@ Dataset mencakup informasi dari 7.043 pelanggan, termasuk fitur demografis, laya
 ## **Temuan Utama**
 ### **Distribusi Churn**
 - **Churn Rate**: 26,58% pelanggan berhenti berlangganan.
-- Pelanggan dengan kontrak **bulanan** memiliki churn rate tertinggi dibandingkan dengan pelanggan kontrak **tahunan**.
+- Pelanggan dengan kontrak **bulanan** memiliki churn rate yang jauh lebih tinggi dibandingkan pelanggan dengan kontrak **tahunan**.
 
-**Visualisasi**:
-![Distribusi Churn](path/to/visualization1.png)
+![Distribusi Churn](Image/Distribusi%20Churn%20Label.png)
 
 ---
 
-### **Analisis Fitur**
+### **Analisis Fitur Penting**
 1. **Durasi Berlangganan (Tenure)**:
-   - Pelanggan dengan **tenure kurang dari 12 bulan** lebih cenderung berhenti berlangganan.
-   - Distribusi tenure menunjukkan pola churn yang kuat pada pelanggan baru.
+   - Pelanggan baru dengan **tenure kurang dari 12 bulan** memiliki risiko churn tertinggi.
+   - Pelanggan dengan **tenure lebih dari 24 bulan** cenderung lebih loyal.
 
-2. **Kontrak Bulanan**:
-   - Sebagian besar pelanggan churn memiliki kontrak bulanan.
-   - Pelanggan dengan kontrak jangka panjang memiliki tingkat churn yang lebih rendah.
+![Distribusi Tenure](Image/Distribution%20of%20Tenure%20in%20Months.png)
 
-**Visualisasi**:
-- Korelasi churn dengan fitur-fitur utama (heatmap):
-![Heatmap Korelasi](path/to/visualization2.png)
-- Distribusi Tenure berdasarkan status churn:
-![Distribusi Tenure](path/to/visualization3.png)
+2. **Jenis Kontrak**:
+   - Kontrak **bulanan** paling rentan terhadap churn.
+   - Pelanggan dengan kontrak tahunan atau dua tahunan memiliki tingkat churn yang rendah.
+
+![Churn Berdasarkan Kontrak](Image/Churn%20by%20Contract.png)
+
+3. **Layanan Internet**:
+   - Pelanggan yang menggunakan layanan internet **Fiber Optic** memiliki tingkat churn lebih tinggi dibandingkan pelanggan dengan **DSL** atau tanpa internet.
+
+![Churn Berdasarkan Internet Service](Image/Churn%20by%20Internet%20Service.png)
+
+![Churn Berdasarkan Internet Service](Image/Churn%20Berdasarkan%20Internet%20Type.png)
+
+4. **Alasan Churn**:
+   - Alasan utama pelanggan churn adalah **kompetitor menawarkan perangkat yang lebih baik**, **penawaran harga lebih menarik**, dan **ketidakpuasan terhadap layanan dukungan pelanggan**.
+
+![Alasan Churn](Image/Churn%20Reasons.png)
 
 ---
 
-## **Modeling**
-### **Model yang Digunakan**:
-1. **Logistic Regression**: Model baseline untuk memahami hubungan linier antara fitur.
-2. **Random Forest**: Model untuk menangkap hubungan kompleks antar fitur.
-3. **XGBoost**: Model terbaik untuk performa keseluruhan.
+### **Performa Model**
 
-**Performa Model**:
-| Model              | Akurasi | Presisi (Churn) | Recall (Churn) | F1-Score (Churn) |
-|--------------------|---------|-----------------|----------------|------------------|
-| Logistic Regression| 87.12%  | 78.34%          | 83.56%         | 80.87%           |
-| Random Forest      | 92.41%  | 85.67%          | 89.31%         | 87.45%           |
-| **XGBoost**        | **95.03%**| **92.00%**      | **90.00%**     | **91.00%**       |
+Berikut adalah hasil evaluasi tiga model yang digunakan dalam proyek ini berdasarkan metrik **Accuracy**, **Precision**, **Recall**, dan **F1-Score** untuk memprediksi pelanggan churn:
+
+| Model               | Akurasi   | Precision (Churn) | Recall (Churn) | F1-Score (Churn) |
+|---------------------|-----------|-------------------|----------------|------------------|
+| Logistic Regression | 94.82%    | 89.71%            | **90.91%**     | 90.31%           |
+| Random Forest       | **95.03%**| 90.86%            | 90.37%         | **90.62%**       |
+| XGBoost             | **95.03%**| **91.53%**        | 89.57%         | 90.54%           |
+
+---
+
+## **Model Terbaik**
+
+### **Random Forest atau XGBoost?**
+- **Random Forest**:
+  - Memiliki **F1-Score tertinggi (90.62%)**, sehingga memberikan keseimbangan terbaik antara Precision dan Recall.
+  - Recall-nya sedikit lebih tinggi daripada XGBoost, membuatnya lebih cocok untuk mendeteksi pelanggan yang benar-benar churn (mengurangi False Negatives).
+
+- **XGBoost**:
+  - Memiliki **Precision tertinggi (91.53%)**, sehingga lebih andal dalam memprediksi pelanggan churn dengan akurasi tinggi (mengurangi False Positives).
+  - Recall-nya sedikit lebih rendah dibandingkan Random Forest.
+
+### **Rekomendasi Model**:
+- Jika bisnis memprioritaskan **deteksi churn secara akurat tanpa banyak pelanggan salah teridentifikasi** sebagai churn (**Precision tinggi**), maka **XGBoost** adalah pilihan terbaik.
+- Namun, jika **mendeteksi sebanyak mungkin pelanggan yang churn** lebih penting (**Recall tinggi**) untuk meminimalkan kehilangan pelanggan yang benar-benar churn, maka **Random Forest** lebih ideal.
+
+**Kesimpulan Akhir**:
+- Dalam proyek ini, **Random Forest** dipilih sebagai model utama karena memiliki **F1-Score tertinggi** dan performa keseluruhan yang sangat baik. XGBoost tetap menjadi alternatif kuat, terutama jika Precision menjadi prioritas bisnis.
+
+![Confusion Matrix (XGBoost)](Image/Confusion%20Matrix.png)
 
 ---
 
 ## **Rekomendasi Strategis**
 1. **Kontrak Jangka Panjang**:
-   - Berikan insentif untuk pelanggan dengan kontrak bulanan agar beralih ke kontrak tahunan.
+   - Berikan insentif kepada pelanggan dengan kontrak bulanan agar beralih ke kontrak tahunan atau dua tahunan.
 
-2. **Loyalty Program**:
-   - Kembangkan program loyalitas untuk pelanggan baru dan pelanggan senior.
+2. **Peningkatan Layanan**:
+   - Tingkatkan kualitas layanan internet untuk pelanggan **Fiber Optic**.
+   - Tingkatkan responsivitas dan efisiensi layanan dukungan pelanggan.
 
-3. **Dukungan Pelanggan**:
-   - Tingkatkan kecepatan dan kualitas dukungan teknis, terutama pada masalah internet.
+3. **Program Loyalitas**:
+   - Kembangkan program loyalitas yang ditargetkan untuk pelanggan baru (tenure < 12 bulan) dan pelanggan senior.
 
----
-
-## **Cara Menggunakan**
-1. Clone repository ini:
-   ```bash
-   git clone https://github.com/username-anda/churn-prediction.git
