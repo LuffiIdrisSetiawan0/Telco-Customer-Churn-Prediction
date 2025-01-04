@@ -16,7 +16,7 @@ Melalui proyek ini, saya menyelidiki alasan di balik perilaku pelanggan yang mem
 
 ## **Dataset**
 Dataset yang digunakan dalam proyek ini berasal dari IBM dan dapat diunduh melalui tautan berikut: 
-[IBM Telco customer churn](https://www.kaggle.com/datasets/alfathterry/telco-customer-churn-11-1-3).
+[Telco customer churn dataset](https://www.kaggle.com/datasets/alfathterry/telco-customer-churn-11-1-3).
 
 Dataset mencakup informasi pelanggan dari perusahaan telekomunikasi, dengan 7.043 baris dan beberapa fitur seperti:
 - **Demografi**: Informasi seperti jenis kelamin, usia, status pernikahan, dan jumlah tanggungan.
