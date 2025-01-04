@@ -1,9 +1,29 @@
 # **Prediksi Churn dan Segmentasi Pelanggan**
 
 ## **Ringkasan Proyek**
-Proyek ini dirancang untuk membantu perusahaan telekomunikasi memahami perilaku pelanggan yang berhenti berlangganan (*churn*). Dengan analisis data mendalam dan pembelajaran mesin, proyek ini mengidentifikasi pola churn dan menghasilkan rekomendasi berbasis data untuk meningkatkan retensi pelanggan.
+Bayangkan sebuah perusahaan telekomunikasi yang selama bertahun-tahun telah melayani ribuan pelanggan dengan layanan telepon dan internet. Setiap hari, pelanggan-pelanggan baru datang, namun sebagian lainnya pergi tanpa memberikan alasan yang jelas. Bagi perusahaan ini, setiap pelanggan yang pergi adalah sebuah kehilangan besar—baik dari segi pendapatan maupun potensi untuk tumbuh di masa depan.
 
-Dataset mencakup informasi dari 7.043 pelanggan, termasuk fitur demografis, layanan yang digunakan, dan status pelanggan.
+Melalui proyek ini, saya akan menyelidiki alasan di balik perilaku pelanggan yang memilih untuk berhenti berlangganan (churn). Tak hanya itu, saya juga akan mencoba memahami pola-pola yang tersembunyi dalam data, mengelompokkan pelanggan ke dalam segmen-segmen tertentu untuk membantu perusahaan lebih memahami kebutuhan mereka. Pada akhirnya, tujuan proyek ini adalah memberikan wawasan yang dapat mendorong perusahaan ini untuk meningkatkan kepuasan pelanggan dan menjaga loyalitas mereka.
+
+---
+
+## **Tujuan**
+- Mengidentifikasi faktor-faktor utama yang memengaruhi churn pelanggan.
+- Membangun model prediksi churn yang akurat.
+- Memberikan rekomendasi berbasis data untuk mengurangi tingkat churn.
+
+---
+
+## **Dataset**
+Dataset yang digunakan dalam proyek ini berasal dari IBM dan dapat diunduh melalui tautan berikut: 
+[IBM Telco customer churn](https://www.kaggle.com/datasets/alfathterry/telco-customer-churn-11-1-3).
+
+Dataset mencakup informasi pelanggan dari perusahaan telekomunikasi, dengan 7.043 baris dan beberapa fitur seperti:
+- **Demografi**: Informasi seperti jenis kelamin, usia, status pernikahan, dan jumlah tanggungan.
+- **Lokasi**: Negara, negara bagian, kota, dan kode pos tempat tinggal pelanggan.
+- **Layanan**: Jenis layanan yang digunakan oleh pelanggan, termasuk layanan telepon, internet, dan fitur tambahan seperti keamanan online dan streaming TV.
+- **Interaksi**: Informasi mengenai durasi berlangganan, metode pembayaran, dan apakah pelanggan pernah merujuk teman atau keluarga.
+- **Status Pelanggan**: Status terkini pelanggan (berhenti, tetap, atau baru bergabung), skor kepuasan, skor churn, dan nilai seumur hidup pelanggan (Customer Lifetime Value/CLTV).
 
 ---
 
