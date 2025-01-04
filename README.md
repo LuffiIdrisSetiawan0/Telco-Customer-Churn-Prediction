@@ -152,14 +152,49 @@ Berikut adalah hasil evaluasi tiga model yang digunakan dalam proyek ini berdasa
 
 ---
 
+### **Kesimpulan Utama**
+
+1. **Profil Pelanggan Rentan Churn**:
+   - Pelanggan dengan **kontrak Month-to-Month** menunjukkan tingkat churn tertinggi (**45.84%**). Kemudahan untuk menghentikan layanan tanpa penalti membuat mereka lebih rentan pindah ke kompetitor.
+   - **Pelanggan baru** dengan **tenure pendek** (kurang dari 12 bulan) memiliki risiko churn lebih besar. Ketidakpuasan awal atau ketidaksesuaian ekspektasi menjadi faktor utama.
+   - **Pelanggan senior** dengan tingkat churn mencapai **41.68%** memerlukan pendekatan yang lebih personal, khususnya dalam aspek dukungan teknis dan tarif.
+
+2. **Performa Model Prediksi Churn**:
+   - Dari tiga model yang diuji (Logistic Regression, Random Forest, dan XGBoost), **XGBoost** memberikan hasil terbaik dengan **akurasi 95.46%**, **precision 93.06%**, dan **F1-score 91.28%**. Hal ini menunjukkan kemampuan model yang baik dalam mengidentifikasi pelanggan yang kemungkinan besar akan churn, sekaligus meminimalkan kesalahan klasifikasi.
+   - Meskipun demikian, **Random Forest** memiliki kinerja yang hampir setara dengan keunggulan lebih sederhana dalam interpretasi, yang membuatnya cocok untuk diimplementasikan jika faktor kompleksitas menjadi pertimbangan.
+
+3. **Insight dari Alasan Churn**:
+   - Sebagian besar churn disebabkan oleh **kompetitor** yang menawarkan perangkat lebih canggih, harga yang lebih kompetitif, atau paket data yang lebih besar.
+   - Masalah lain seperti **dukungan pelanggan yang kurang responsif** dan **ketidakpuasan layanan internet** juga menjadi alasan signifikan bagi pelanggan untuk berhenti berlangganan.
+
+---
+
 ## **Rekomendasi Strategis**
-1. **Kontrak Jangka Panjang**:
-   - Berikan insentif kepada pelanggan dengan kontrak bulanan agar beralih ke kontrak tahunan atau dua tahunan.
 
-2. **Peningkatan Layanan**:
-   - Tingkatkan kualitas layanan internet untuk pelanggan **Fiber Optic**.
-   - Tingkatkan responsivitas dan efisiensi layanan dukungan pelanggan.
+1. **Konversi Pelanggan Month-to-Month ke Kontrak Tahunan**:
+   - **Tawarkan insentif** seperti diskon eksklusif, tambahan kuota data, atau hadiah langsung kepada pelanggan yang bersedia beralih ke kontrak tahunan atau dua tahunan.
+   - **Komunikasikan manfaat jangka panjang** seperti penghematan biaya bulanan atau perlindungan harga terhadap kenaikan biaya di masa depan.
 
-3. **Program Loyalitas**:
-   - Kembangkan program loyalitas yang ditargetkan untuk pelanggan baru (tenure < 12 bulan) dan pelanggan senior.
+2. **Program Loyalitas untuk Pelanggan Baru**:
+   - Implementasikan program **"Welcome Bundle"** untuk pelanggan baru berupa diskon tiga bulan pertama, bonus channel streaming, atau layanan tambahan gratis. 
+   - Buat **proses onboarding yang mulus** dan lakukan **follow-up rutin** untuk memastikan pengalaman awal pelanggan memuaskan.
 
+3. **Peningkatan Layanan Internet**:
+   - Perbaiki infrastruktur jaringan untuk meningkatkan **kecepatan dan stabilitas internet**, terutama bagi pelanggan **Fiber Optic** yang memiliki ekspektasi tinggi.
+   - Buat **hotline khusus untuk dukungan teknis** dengan waktu tanggap SLA yang terjamin, sehingga pelanggan merasa kebutuhan mereka diutamakan.
+
+4. **Segmentasi dan Layanan Khusus untuk Pelanggan Senior**:
+   - Luncurkan paket khusus yang menawarkan tarif yang lebih terjangkau, bonus layanan, dan **tim dukungan khusus senior** yang mampu memberikan layanan yang lebih personal.
+   - Promosikan program ini melalui saluran komunikasi tradisional seperti telepon dan surat fisik yang lebih akrab bagi segmen pelanggan ini.
+
+5. **Strategi Kompetitif Melawan Kompetitor**:
+   - Tingkatkan **nilai tambah layanan** seperti bundling perangkat canggih atau fitur inovatif yang tidak ditawarkan oleh kompetitor.
+   - Buat **kampanye pemasaran berbasis data** yang menonjolkan keunggulan perusahaan dalam aspek layanan pelanggan dan pengalaman pengguna.
+
+6. **Fokus pada Pelanggan dengan Biaya Tinggi**:
+   - Pelanggan dengan biaya tinggi adalah sumber pendapatan utama, tetapi mereka juga memiliki ekspektasi yang lebih besar. Implementasikan program **VIP loyalty** seperti layanan prioritas, bonus tahunan, dan akses eksklusif ke fitur premium.
+   - Buat mereka merasa **dihargai dan tidak tergantikan**, sehingga risiko churn dapat diminimalkan.
+
+7. **Peningkatan Kualitas Dukungan Pelanggan**:
+   - Berikan pelatihan intensif untuk tim call center agar mampu menangani keluhan pelanggan secara profesional.
+   - Terapkan **sistem umpan balik pelanggan** untuk memonitor dan meningkatkan kualitas layanan pelanggan secara berkelanjutan.
