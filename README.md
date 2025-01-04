@@ -25,6 +25,62 @@ Dataset mencakup informasi pelanggan dari perusahaan telekomunikasi, dengan 7.04
 - **Interaksi**: Informasi mengenai durasi berlangganan, metode pembayaran, dan apakah pelanggan pernah merujuk teman atau keluarga.
 - **Status Pelanggan**: Status terkini pelanggan (berhenti, tetap, atau baru bergabung), skor kepuasan, skor churn, dan nilai seumur hidup pelanggan (Customer Lifetime Value/CLTV).
 
+
+## **Deskripsi Kolom Dataset**
+
+| **Kolom**                     | **Deskripsi**                                                                                                                                                 |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CustomerID**                | Sebuah ID unik yang mengidentifikasi setiap pelanggan.                                                                                                     |
+| **Gender**                    | Jenis kelamin pelanggan: Male, Female.                                                                                                                     |
+| **Age**                       | Usia pelanggan saat ini, dalam tahun, pada akhir kuartal fiskal.                                                                                           |
+| **Senior Citizen**            | Menunjukkan apakah pelanggan berusia 65 tahun atau lebih: Yes, No.                                                                                         |
+| **Married**                   | Menunjukkan apakah pelanggan sudah menikah: Yes, No.                                                                                                       |
+| **Dependents**                | Menunjukkan apakah pelanggan tinggal dengan tanggungan: Yes, No. Tanggungan dapat berupa anak, orang tua, atau lainnya.                                     |
+| **Number of Dependents**      | Jumlah tanggungan yang tinggal bersama pelanggan.                                                                                                          |
+| **Count**                     | Nilai yang digunakan untuk pelaporan/dashboards untuk menjumlahkan jumlah pelanggan dalam set yang difilter.                                                |
+| **Country**                   | Negara tempat tinggal utama pelanggan.                                                                                                                     |
+| **State**                     | Negara bagian tempat tinggal utama pelanggan.                                                                                                              |
+| **City**                      | Kota tempat tinggal utama pelanggan.                                                                                                                       |
+| **Zip Code**                  | Kode pos tempat tinggal utama pelanggan.                                                                                                                   |
+| **Latitude**                  | Garis lintang dari tempat tinggal utama pelanggan.                                                                                                         |
+| **Longitude**                 | Garis bujur dari tempat tinggal utama pelanggan.                                                                                                           |
+| **Population**                | Estimasi populasi terkini untuk seluruh area kode pos.                                                                                                     |
+| **Quarter**                   | Kuartal fiskal di mana data ini berasal (misalnya, Q3).                                                                                                    |
+| **Referred a Friend**         | Menunjukkan apakah pelanggan pernah mereferensikan teman atau keluarga: Yes, No.                                                                           |
+| **Number of Referrals**       | Jumlah referensi yang telah dibuat oleh pelanggan hingga saat ini.                                                                                         |
+| **Tenure in Months**          | Total jumlah bulan pelanggan telah berlangganan hingga akhir kuartal yang ditentukan.                                                                      |
+| **Offer**                     | Penawaran pemasaran terakhir yang diterima pelanggan, jika ada. Nilai termasuk None, Offer A, Offer B, Offer C, Offer D, dan Offer E.                       |
+| **Phone Service**             | Menunjukkan apakah pelanggan berlangganan layanan telepon rumah dengan perusahaan: Yes, No.                                                                |
+| **Avg Monthly Long Distance Charges** | Biaya jarak jauh rata-rata pelanggan per bulan hingga akhir kuartal yang ditentukan.                                                                 |
+| **Multiple Lines**            | Menunjukkan apakah pelanggan berlangganan beberapa saluran telepon: Yes, No.                                           
+| **Internet Service**            | Menunjukkan apakah pelanggan berlangganan layanan Internet: Yes, No.
+| **Internet Type**          | Menunjukkan tipe jaringan dari layanan Internet pelanggan: None, DSL, Fiber Optic, Cable.                                                                   |
+| **Avg Monthly GB Download**   | Volume unduhan rata-rata pelanggan per bulan dalam gigabyte hingga akhir kuartal yang ditentukan.                                                          |
+| **Online Security**           | Menunjukkan apakah pelanggan berlangganan layanan keamanan online tambahan dari perusahaan: Yes, No.                                                       |
+| **Online Backup**             | Menunjukkan apakah pelanggan berlangganan layanan pencadangan online tambahan: Yes, No.                                                                   |
+| **Device Protection Plan**    | Menunjukkan apakah pelanggan berlangganan perlindungan perangkat untuk peralatan internet: Yes, No.                                                        |
+| **Premium Tech Support**      | Menunjukkan apakah pelanggan berlangganan dukungan teknis premium: Yes, No.                                                                                |
+| **Streaming TV**              | Menunjukkan apakah pelanggan menggunakan layanan internet mereka untuk streaming TV pihak ketiga: Yes, No.                                                 |
+| **Streaming Movies**          | Menunjukkan apakah pelanggan menggunakan layanan internet mereka untuk streaming film pihak ketiga: Yes, No.                                               |
+| **Streaming Music**           | Menunjukkan apakah pelanggan menggunakan layanan internet mereka untuk streaming musik pihak ketiga: Yes, No.                                              |
+| **Unlimited Data**            | Menunjukkan apakah pelanggan membayar biaya tambahan bulanan untuk data tanpa batas: Yes, No.                                                              |
+| **Contract**                  | Jenis kontrak pelanggan saat ini: Month-to-Month, One Year, Two Year.                                                                                      |
+| **Paperless Billing**         | Menunjukkan apakah pelanggan memilih tagihan tanpa kertas: Yes, No.                                                                                       |
+| **Payment Method**            | Cara pelanggan membayar tagihan mereka: Bank Withdrawal, Credit Card, Mailed Check.                                                                        |
+| **Monthly Charge**            | Total biaya bulanan pelanggan saat ini untuk semua layanan dari perusahaan.                                                                                |
+| **Total Charges**             | Total biaya pelanggan hingga akhir kuartal yang ditentukan.                                                                                                |
+| **Total Refunds**             | Total pengembalian dana pelanggan hingga akhir kuartal yang ditentukan.                                                                                    |
+| **Total Extra Data Charges**  | Total biaya data tambahan pelanggan di atas rencana mereka hingga akhir kuartal yang ditentukan.                                                           |
+| **Total Long Distance Charges** | Total biaya jarak jauh pelanggan di atas rencana mereka hingga akhir kuartal yang ditentukan.                                                              |
+| **Satisfaction Score**        | Peringkat kepuasan keseluruhan pelanggan terhadap perusahaan dari 1 (Sangat Tidak Puas) hingga 5 (Sangat Puas).                                             |
+| **Customer Status**           | Status pelanggan pada akhir kuartal: Churned, Stayed, atau Joined.                                                                                         |
+| **Churn Label**               | Yes = pelanggan berhenti berlangganan pada kuartal ini. No = pelanggan tetap berlangganan.                                                                 |
+| **Churn Score**               | Nilai dari 0-100 yang dihitung menggunakan alat prediktif IBM SPSS Modeler. Nilai yang lebih tinggi menunjukkan kemungkinan churn yang lebih tinggi.         |
+| **CLTV**                      | Customer Lifetime Value, nilai prediktif seumur hidup pelanggan yang dihitung menggunakan formula perusahaan.                                               |
+| **Churn Category**            | Kategori tingkat tinggi untuk alasan pelanggan berhenti: Attitude, Competitor, Dissatisfaction, Other, Price.                                              |
+| **Churn Reason**              | Alasan spesifik pelanggan berhenti yang berkaitan dengan kategori churn.                                                                                   |
+
+
 ---
 
 ## **Temuan Utama**
