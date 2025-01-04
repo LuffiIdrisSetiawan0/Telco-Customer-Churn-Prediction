@@ -1,4 +1,4 @@
-# **Prediksi Churn Pada Telecommunication Company IBM**
+# **Prediksi Churn Pada Telecommunication Company**
 
 ## **Ringkasan Proyek**
 Bayangkan sebuah perusahaan telekomunikasi yang selama bertahun-tahun telah melayani ribuan pelanggan dengan layanan telepon dan internet. Setiap hari, pelanggan-pelanggan baru datang, namun sebagian lainnya pergi tanpa memberikan alasan yang jelas. Bagi perusahaan ini, setiap pelanggan yang pergi adalah sebuah kehilangan besar—baik dari segi pendapatan maupun potensi untuk tumbuh di masa depan.
