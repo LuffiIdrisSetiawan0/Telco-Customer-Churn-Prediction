@@ -30,7 +30,6 @@ Dataset mencakup informasi pelanggan dari perusahaan telekomunikasi, dengan 7.04
 ## **Temuan Utama**
 ### **Distribusi Churn**
 - **Churn Rate**: 26,58% pelanggan berhenti berlangganan.
-- Pelanggan dengan kontrak **bulanan** memiliki churn rate yang jauh lebih tinggi dibandingkan pelanggan dengan kontrak **tahunan**.
 
 ![Distribusi Churn](Image/Distribusi%20Churn%20Label.png)
 
